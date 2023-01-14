@@ -55,6 +55,7 @@ $(document).ready(function(){
                 }
             },
             submitHandler: function(form) {
+                console.log($(form).serialize());
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
