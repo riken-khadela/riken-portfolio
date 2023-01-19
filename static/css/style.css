@@ -82,9 +82,18 @@ button:focus {
   padding-top: 120px;
   padding-bottom: 120px; }
 
+.p_rem{
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
 .p_100 {
   padding-top: 100px;
   padding-bottom: 100px; }
+.p_70 {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
 
 .pad_top {
   padding-top: 120px; }

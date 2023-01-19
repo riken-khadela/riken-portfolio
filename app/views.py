@@ -51,3 +51,9 @@ class single_blog(TemplateView):
     def get(self, request):
 
         return render(request, self.template_name)
+    
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
+
+        return render(request, self.template_name)

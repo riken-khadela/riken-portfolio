@@ -10,5 +10,6 @@ urlpatterns = [
     path('portfolio',portfolio.as_view(),name='portfolio'),
     path('services',services.as_view(),name='services'),
     path('single_blog',single_blog.as_view(),name='single_blog'),
+    path('prt1',prt1.as_view(),name='prt1'),
     
 ]
