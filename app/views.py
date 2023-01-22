@@ -52,8 +52,65 @@ class single_blog(TemplateView):
 
         return render(request, self.template_name)
     
+# --------------------------------------------------------------1
+class prt1(TemplateView):
+    template_name = "prt/1.html"
+    def get(self, request):
+        return render(request, self.template_name)
+
+# --------------------------------------------------------------2
+class prt2(TemplateView):
+    template_name = "prt/2.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+
+    
+# --------------------------------------------------------------3
 class prt1(TemplateView):
     template_name = "prt1.html"
     def get(self, request):
 
+        return render(request, self.template_name) 
+       
+# --------------------------------------------------------------4
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
+
+        return render(request, self.template_name)    
+        
+# --------------------------------------------------------------5
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+
+# --------------------------------------------------------------6
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+
+# --------------------------------------------------------------7
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+
+# --------------------------------------------------------------8
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+
+# --------------------------------------------------------------9
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+
+# --------------------------------------------------------------10
+class prt1(TemplateView):
+    template_name = "prt1.html"
+    def get(self, request):
         return render(request, self.template_name)
