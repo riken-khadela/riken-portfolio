@@ -66,50 +66,50 @@ class prt2(TemplateView):
     
 # --------------------------------------------------------------3
 class prt3(TemplateView):
-    template_name = "prt3.html"
+    template_name = "prt/3.html"
     def get(self, request):
 
         return render(request, self.template_name) 
        
 # --------------------------------------------------------------4
 class prt4(TemplateView):
-    template_name = "prt4.html"
+    template_name = "prt/4.html"
     def get(self, request):
 
         return render(request, self.template_name)    
         
 # --------------------------------------------------------------5
 class prt5(TemplateView):
-    template_name = "prt5.html"
+    template_name = "prt/5.html"
     def get(self, request):
         return render(request, self.template_name)    
 
 # --------------------------------------------------------------6
 class prt6(TemplateView):
-    template_name = "prt6.html"
+    template_name = "prt/6.html"
     def get(self, request):
         return render(request, self.template_name)    
 
 # --------------------------------------------------------------7
 class prt7(TemplateView):
-    template_name = "prt7.html"
+    template_name = "prt/7.html"
     def get(self, request):
         return render(request, self.template_name)    
 
 # --------------------------------------------------------------8
 class prt8(TemplateView):
-    template_name = "prt8.html"
+    template_name = "prt/8.html"
     def get(self, request):
         return render(request, self.template_name)    
 
 # --------------------------------------------------------------9
 class prt9(TemplateView):
-    template_name = "prt9.html"
+    template_name = "prt/9.html"
     def get(self, request):
         return render(request, self.template_name)    
 
 # --------------------------------------------------------------10
 class prt10(TemplateView):
-    template_name = "prt10.html"
+    template_name = "prt/10.html"
     def get(self, request):
         return render(request, self.template_name)
