@@ -49,7 +49,6 @@ class services(TemplateView):
 class single_blog(TemplateView):
     template_name = "single-blog.html"
     def get(self, request):
-
         return render(request, self.template_name)
     
 # --------------------------------------------------------------1
