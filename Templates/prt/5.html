@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}CoinHomes{% endblock %}
+{% block title %}Instagram Bot{% endblock %}
 
 {% block content %}
 
@@ -37,10 +37,10 @@
         <div class="banner_inner d-flex align-items-center">
             <div class="container">
                 <div class="banner_content text-center">
-                    <h2>CoinHomes</h2>
+                    <h2>Instagram Bot</h2>
                     <div class="page_link">
                         <a href="{% url 'home' %}">Home</a>
-                        <a href="{% url 'about' %}">CoinHomes</a>
+                        <a href="{% url 'about' %}">Instagram Bot</a>
                     </div>
                 </div>
             </div>
@@ -56,8 +56,8 @@
            <div class="profile_inner p_rem">
             <div class="row">
                 <div style="padding-bottom: 2rem; " class="m-auto"	>
-                    <h1 class="text-center">CoinHomes Real E-state</h1>
-                    <p class="text-center"> Advanced Real estate website with cryptocurrency and chat functionality.</p>
+                    <h1 class="text-center">Instagram Automation Bot</h1>
+                    <p class="text-center">Embrace Automation for Effortless Social Growth</p>
                 </div>
 
                 {% comment %} <!-- <div class="col-lg-7">
@@ -78,23 +78,32 @@
                         </ul>
                     </div>
                 </div> --> {% endcomment %}
-                <div class="">
-                    <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt2_1.png" alt="">
+                <div class="align-items-center justify-content-center m-auto ">
+                    <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt5_1.webp" alt="">
                 </div>
             </div>
            </div>
     </div>
 </section>
 <!--================End Home Banner Area =================-->
-
+<section class="welcome_area p-4 ">
+    <div class="container">
+        <div class="row welcome_inner">
+                <div class="m-auto col-9">
+                    {% comment %} <h2 class="text-center">What is about this project</h2> {% endcomment %}
+                    <p class="text-center">The project aimed to enhance users' social presence on Instagram through automation of various tasks using Django and Android Emulator. A range of functions were implemented including account creation, profile updates, engagement with targeted accounts, and generating reports of all activities.</p>
+                </div>
+        </div>
+    </div>
+</section>
 <!--================Welcome Area =================-->
-<section class="welcome_area p_70">
+<section class="welcome_area p-4">
     <div class="container">
         <div class="row welcome_inner">
             <div class="col-lg-6">
                 <div class="welcome_text">
                     <h4>What is about this project</h4>
-                    <p>CoinHomes is an advanced real estate platform that allows users to search and browse properties available on the platform or pick a home from any other real estate platform. It uses API systems to provide a rich experience for users and has a search functionality for properties by location, price in both dollar and crypto. The platform also offers a paperless process for buying a property which includes steps like Initial deposit, Agreement, Offer Accepted, deposit crypto, Setup Monthly Payments, Move In.</p>
+                    <p>In this project, I aimed to boost users' social presence on Instagram through automation. I utilized Django commands to perform various actions such as creating Instagram accounts, performing random actions, updating profiles, uploading photos, and engaging with other users. The primary objective was to create a system that mimicked real human behavior on Instagram. To achieve this, I implemented various functionalities such as obtaining OTPs for account creation and verification using the Getsms service, updating profile details to make it more authentic, and performing targeted engagement with other users.</p>
                     <div class="row">
                         {% comment %} <!-- <div class="col-md-4">
                             <div class="wel_item">
@@ -121,77 +130,58 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="tools_expert">
-                    {% comment %} <div class="m-auto">
-                        <h4>What skills have been used </h4>
-                        <p></p>
-                    </div> {% endcomment %}
-                    <div class="skill_main">
-
-                        <div class="skill_item">
-                            <h4>Server-side Language : Python<span class="counter">100</span>%</h4>
-                            <div class="progress_br">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
+                <div class="">
+                    <div class="container text-center">
+                        <h2 class="m-2">Tech Stack</h2>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <ul class="list-group " style="border: none !important;">
+                                <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Python/Django
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Django Commands
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Appium
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Getsmservice for OTP
+                                  </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-6">
+                            <ul class="list-group border-0">
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                Crontab
+                              </li>
+                            
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                Threading System
+                              </li>
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                Git
+                              </li>
+                            </ul>
+                          </div>
                         </div>
-                        <div class="skill_item">
-                            <h4>BACKEND : Django <span class="counter">100</span>%</h4>
-                            <div class="progress_br">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill_item">
-                            <h4>Front-end Framework : React.JS <span class="counter">100</span>%</h4>
-                            <div class="progress_br">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill_item">
-                            <h4>Payment gateway : strip <span class="counter">100</span>%</h4>
-                            <div class="progress_br">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill_item">
-                            <h4>Hosting platform : AWS <span class="counter">100</span>%</h4>
-                            <div class="progress_br">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                      </div>
                 </div>
             </div>
         </div>
 
-        <div class="p-5"></div>
-        <div class="profile_inner"></div>
     </div>
 </section>
 
 
-<section class="welcome_area p-4 ">
-    <div class="container">
-        <div class="row welcome_inner">
-                <div class="m-auto">
-                    {% comment %} <h2 class="text-center">What is about this project</h2> {% endcomment %}
-                    <p class="text-center">Additionally, it has a chat functionality for buyers and sellers to connect, and a feature for sellers to add property details. This platform utilizes cryptocurrency and provides an efficient, secure, and paperless process for buying and selling properties.</p>
-                </br>
-                
-                <p class="text-center">This can make it easy for the buyer and seller to do transactions in cryptocurrency.</p>
-                </div>
-        </div>
-    </div>
-</section>
+
 
 <section class="welcome_area p-3 ">
     <div class="container">
@@ -201,29 +191,21 @@
                 <div class="tools_expert">
                     
                     <div class="skill_main text-center ">
-                        
-                        <div class="skill_item p-1">
-
-                            <a class='text-secondary' href="https://coinhomes.com/"><h2 class=''  >Live Link : CoinHomes</h2></a>
-                            
-                            <p></p>
-                        </div>
-
 
                         <div class="skill_item p-1">
 
                             <h3>Platforms:</h3>
-                            <h6>Android, iOS, Web app</h6>
+                            <h6>Web app</h6>
                             <p></p>
                         </div>
                         
                         <div class="skill_item p-1">
                             <h3>Industry</h3>
-                            <h6>Real E-state properties.</h6>
+                            <h6>E-commerce website.</h6>
                         </div>
                         <div class="skill_item p-1">
                             <h3>Project Length</h3>
-                            <h6>6 Months</h6>
+                            <h6>9 Months</h6>
                         </div>
                         
                     </div>
@@ -239,7 +221,7 @@
          <div class="row">
              {% comment %} <div style="padding-bottom: 2rem; " class="m-auto"	>
                  <h1 class="text-center">This is project heading</h1>
-                 <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quia!</p>
+                 <p class="text-center">Amplify Your Social Game with Cutting-Edge Technology</p>
              </div> {% endcomment %}
 
              {% comment %} <!-- <div class="col-lg-7">
@@ -260,8 +242,8 @@
                      </ul>
                  </div>
              </div> --> {% endcomment %}
-             <div class="">
-                 <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt2_4.png" alt="">
+             <div class="align-items-center justify-content-center m-auto ">
+                 <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt5_2.webp" alt="">
              </div>
          </div>
         </div>
@@ -273,9 +255,7 @@
     <div class="row welcome_inner">
             <div class="m-auto col-lg-7">
                 <h2 class="text-center">Challanges We Have Faced</h2>
-                <p class="text-center ">When building a real estate platform, developers may face several challenges such as scalability, integration with other systems, security, user experience, handling large amounts of data and keeping up with the latest technology and trends. </p>
-                <p class="text-center ">These problems can range from technical difficulties such as handling a high volume of data, to user-experience issues such as creating a user-friendly interface and providing an efficient search functionality. </p>
-                <p class="text-center ">It's important to address these challenges and find solutions that meet the needs of users while providing a modern and up-to-date platform.</p>
+                <p class="text-center ">One of the major challenges in this project was to emulate real human behavior on Instagram. The platform has strict rules and regulations, and even a minor deviation from the standard behavior could result in account suspension. To tackle this challenge, I had to ensure that all the scripts were optimized to behave like a real user and avoid any suspicious activities. The other challenge was to provide a comprehensive report of all the activities performed by the system. To overcome this, I created a Django command that generated an overall report and set crontabs to keep track of all the actions.</p>
             </div>
     </div>
 </div>
@@ -308,8 +288,8 @@
              </div>
          </div> --> {% endcomment %}
          
-         <div class="">
-             <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt2_5.png" alt="">
+         <div class="align-items-center justify-content-center m-auto ">
+             <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt5_3.jpg" alt="">
          </div>
      </div>
     </div>
@@ -321,8 +301,19 @@
     <div class="row welcome_inner">
             <div class="m-auto col-lg-7">
                 <h2 class="text-center">How we have solved that</h2>
-                <p class="text-center">In conclusion,CoinHomes is an advanced real estate platform that uses API systems and offers a paperless process for buying a property in crypto</p>
-                <p class="text-center"> Building such a platform comes with its own set of challenges, but a phased approach, robust security, user testing, and staying up-to-date with technology can overcome these challenges to provide a user-friendly, efficient and modern platform.</p>
+                <p class="text-center">To overcome the challenge of emulating real human behavior, I carefully designed and tested each script to avoid any suspicious activities that could lead to account suspension. I also made sure to implement various functionalities such as obtaining OTPs and updating profile details to make the system more authentic. Additionally, I created a Django command that generated a comprehensive report of all the activities performed by the system, which helped to keep track of all the actions and provide valuable insights to the clients.</p>
+                
+            </div>
+    </div>
+</div>
+</section>
+
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7">
+                <h2 class="text-center">In Conclusion</h2>
+                <p class="text-center">In conclusion, the project was a success, as it fulfilled its primary objective of boosting users' social presence on Instagram through automation. The project was challenging, but I was able to overcome the hurdles through careful planning and implementation of various functionalities. The final product was well received by the clients, who appreciated the comprehensive report of all the activities performed by the system.</p>
                 
             </div>
     </div>
