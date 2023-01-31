@@ -266,31 +266,25 @@
 <section class="home_gallery_area p_120">
  <div class="container">
 	 <div class="main_title">
-		 <h2>Our Latest Featured Projects</h2>
-		 <p>Who are in extremely love with eco friendly system.</p>
+		 <h2>My Latest Featured Projects</h2>
 	 </div>
-	 <div class="isotope_fillter">
-		 <ul class="gallery_filter list">
-			 <li class="active" data-filter="*"><a href="#">All</a></li>
-			 <li data-filter=".brand"><a href="#">Vector</a></li>
-			 <li data-filter=".manipul"><a href="#">Raster</a></li>
-			 <li data-filter=".creative"><a href="#">UI/UX</a></li>
-			 <li data-filter=".design"><a href="#">Printing</a></li>
-		 </ul>
-	 </div>
+	 
  </div>
  <div class="container">
 	 <div class="gallery_f_inner row imageGallery1">
 		 <div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
 			 <div class="h_gallery_item">
-				 <div class="g_img_item">
-					 <img class="img-fluid" src="static/img/gallery/project-1.jpg" alt="">
-					 <a class="light" href="static/img/gallery/project-1.jpg"><img src="static/img/gallery/icon.png" alt=""></a>
-				 </div>
-				 <div class="g_item_text">
-					 <h4>3D Helmet Design</h4>
-					 <p>Client Project</p>
-				 </div>
+				 <a class="pe-auto" href="{% url 'prt1' %}">
+				
+					<div class="g_img_item">
+						<img class="img-fluid" src="static/img/gallery/project-1.jpg" alt="">
+						<div class="light" ><img src="static/img/gallery/icon.png" alt=""></div>
+					</div>
+					<div class="g_item_text">
+						<h4>3D Helmet Design</h4>
+						<p>Client Project</p>
+					</div>
+				</a>
 			 </div>
 		 </div>
 		 <div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
@@ -353,9 +347,6 @@
 				 </div>
 			 </div>
 		 </div>
-	 </div>
-	 <div class="more_btn">
-		 <a class="main_btn" href="{% url 'portfolio' %}">Load More Items</a>
 	 </div>
  </div>
 </section>
