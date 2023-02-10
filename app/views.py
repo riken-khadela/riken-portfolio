@@ -7,8 +7,11 @@ from django.shortcuts import render, redirect
 class Home(TemplateView):
     template_name = "index.html"
     def get(self, request):
-
+        
         return render(request, self.template_name)
+    
+    def post(self,request):
+        return render(request,self.template_name)
 
 class about_us(TemplateView):
     template_name = "about-us.html"
