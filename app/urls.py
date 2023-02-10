@@ -15,10 +15,10 @@ urlpatterns = [
     path('prt3',prt3.as_view(),name='prt3'),
     path('prt4',prt4.as_view(),name='prt4'),
     path('prt5',prt5.as_view(),name='prt5'),
-    path('prt6',prt6.as_view(),name='prt6'),
-    path('prt7',prt7.as_view(),name='prt7'),
-    path('prt8',prt8.as_view(),name='prt8'),
-    path('prt9',prt9.as_view(),name='prt9'),
-    path('prt10',prt10.as_view(),name='prt10'),
+    # path('prt6',prt6.as_view(),name='prt6'),
+    # path('prt7',prt7.as_view(),name='prt7'),
+    # path('prt8',prt8.as_view(),name='prt8'),
+    # path('prt9',prt9.as_view(),name='prt9'),
+    # path('prt10',prt10.as_view(),name='prt10'),
     
 ]
