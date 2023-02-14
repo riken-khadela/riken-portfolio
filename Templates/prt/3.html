@@ -1,0 +1,285 @@
+{% extends "base.html" %}
+
+{% block title %}Telegram Bot{% endblock %}
+
+{% block content %}
+
+        <!--================Home Banner Area =================-->
+        <section class="banner_area">
+            <div class="box_1620">
+				<div class="banner_inner d-flex align-items-center">
+					<div class="container">
+						<div class="banner_content text-center">
+							<h2>Telegram Bot</h2>
+							<div class="page_link">
+								<a href="{% url 'home' %}">Home</a>
+								<a href="{% url 'about' %}">Telegram Bot</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        
+        <!--================Home Banner Area =================-->
+        <section class="profile_area">
+           	<div class="container">
+           		<div class="profile_inner p_rem">
+					<div class="row">
+						<div style="padding-bottom: 2rem; " class="m-auto"	>
+							<h1 class="text-center">Telegram Bot</h1>
+							<p class="text-center">Building a Telegram Bot with Django and Telethon: Enabling Advanced Group Management and Automated Responses</p>
+						</div>
+
+						<!-- <div class="col-lg-7">
+							<div class="personal_text">
+								<h6>Hello Everybody, i am</h6>
+								<h3>Riken Khadela</h3>
+								<h4>Senior Python Developer</h4>
+								<p>"Experienced Python Developer with a proven track record of delivering high-quality code and solutions."</p>
+								<ul class="list basic_info">
+									<li><a href=""><i class="lnr lnr-calendar-full"></i> 21st, Aug, 2001</a></li>
+									<li><a href=""><i class="lnr lnr-phone-handset"></i> (91) 997 891 1838</a></li>
+									<li><a href="mailto:rikenkhadelamain@gmail.com"><i class="lnr lnr-envelope"></i> rikenkhadelamain@gmail.com</a></li>
+									<li><a href=""><i class="lnr lnr-home"></i> Surat, Gujrat, In. - 395010</a></li>
+								</ul>
+								<ul class="list personal_social">
+									<li><a href="https://www.facebook.com/riken.khadela.3/"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/riken-khadela-60b6341a6/"><i class="fa fa-linkedin"></i></a></li>
+								</ul>
+							</div>
+						</div> -->
+						<div class="">
+							<img class="img-fluid rounded-1 " style="border-radius: 1.3rem;" src="static/img/prt/prt3_4.png" alt="">
+						</div>
+					</div>
+           		</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>What is about this project</h4>
+        					<p>
+								The project at hand required the development of various Django commands that would allow for the integration of Telegram functionality through the use of Telethon, a Python library specifically created for interacting with Telegram's API. The primary goal of this project was to create a Telegram bot that would have the capability to log in users, send messages, and even add other users to a group if the bot had the necessary permissions. <br> <br> Additionally, the bot was designed to provide responses to users based on the best match answers found within a database.</p>
+        					<div class="row">
+        						<!-- <div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4>$2.5M</h4>
+        								<p>Total Donation</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>1465</h4>
+        								<p>Total Projects</p>
+        							</div>
+        						</div>
+        						<div class="col-md-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>3965</h4>
+        								<p>Total Volunteers</p>
+        							</div>
+        						</div> -->
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+						<div class="">
+							<div class="container text-center">
+								<h2 class="m-2">Tech Stack</h2>
+								<br>
+								<div class="row">
+								  <div class="col-sm-6">
+									<ul class="list-group " style="border: none !important;">
+										<li class="list-group-item d-flex border-0 align-items-center text-center ">
+											<span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+											Python pure script
+										  </li>
+										  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+											<span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+											Telethon
+										  </li>
+										  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+											<span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+											Telegram API,
+										  </li>
+										 
+									</ul>
+								  </div>
+								  <div class="col-sm-6">
+									<ul class="list-group border-0">
+									  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+										<span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+										Database : Sqlite
+									  </li>
+										<li class="list-group-item d-flex border-0 align-items-center text-center ">
+										<span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+										Git
+									  </li>
+									</ul>
+								  </div>
+								</div>
+							  </div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section>
+
+
+		<section class="profile_area">
+			<div class="container">
+				<div class="profile_inner p_rem">
+				 <div class="row">
+					 <div style="padding-bottom: 2rem; " class="m-auto"	>
+						 <h1 class="text-center">Django and Telethon</h1>
+						 <p class="text-center"> Advanced Telegram Bot development using Django and Telethon: Managing Groups and Automating Responses</p>
+					 </div>
+
+					 <!-- <div class="col-lg-7">
+						 <div class="personal_text">
+							 <h6>Hello Everybody, i am</h6>
+							 <h3>Riken Khadela</h3>
+							 <h4>Senior Python Developer</h4>
+							 <p>"Experienced Python Developer with a proven track record of delivering high-quality code and solutions."</p>
+							 <ul class="list basic_info">
+								 <li><a href=""><i class="lnr lnr-calendar-full"></i> 21st, Aug, 2001</a></li>
+								 <li><a href=""><i class="lnr lnr-phone-handset"></i> (91) 997 891 1838</a></li>
+								 <li><a href="mailto:rikenkhadelamain@gmail.com"><i class="lnr lnr-envelope"></i> rikenkhadelamain@gmail.com</a></li>
+								 <li><a href=""><i class="lnr lnr-home"></i> Surat, Gujrat, In. - 395010</a></li>
+							 </ul>
+							 <ul class="list personal_social">
+								 <li><a href="https://www.facebook.com/riken.khadela.3/"><i class="fa fa-facebook"></i></a></li>
+								 <li><a href="https://www.linkedin.com/in/riken-khadela-60b6341a6/"><i class="fa fa-linkedin"></i></a></li>
+							 </ul>
+						 </div>
+					 </div> -->
+					 <div class="">
+						 <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt3_1.png" alt="">
+					 </div>
+				 </div>
+				</div>
+		 </div>
+	 </section>
+
+	 <section class="welcome_area p_70">
+		<div class="container">
+			<div class="row welcome_inner">
+					<div class="m-auto col-lg-7">
+						<h2 class="text-center">what challanges we got</h2>
+						<p class="text-center">One of the main challenges we faced was integrating Telethon into the Django framework. We had to ensure that the library was properly configured and that it could communicate with the Telegram API. We also had to ensure that the bot could respond to user input in a timely and accurate manner..</p>
+						<p class="text-center">Another challenge we faced was to create an individual messaging feature for the users that are added to the database. We had to ensure that the messaging feature was secure and that it could only be accessed by authorized users. To solve this, we created a database of authorized users and ensured that only authorized users could send and receive messages.</p>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section class="profile_area">
+		<div class="container">
+			<div class="profile_inner p_rem">
+			 <div class="row">
+				 <div style="padding-bottom: 2rem; " class="m-auto"	>
+					 <h1 class="text-center">Group Management and Automated Responses</h1>
+					 <p class="text-center">"Django and Telethon powered Telegram bot</p>
+				 </div>
+
+				 <!-- <div class="col-lg-7">
+					 <div class="personal_text">
+						 <h6>Hello Everybody, i am</h6>
+						 <h3>Riken Khadela</h3>
+						 <h4>Senior Python Developer</h4>
+						 <p>"Experienced Python Developer with a proven track record of delivering high-quality code and solutions."</p>
+						 <ul class="list basic_info">
+							 <li><a href=""><i class="lnr lnr-calendar-full"></i> 21st, Aug, 2001</a></li>
+							 <li><a href=""><i class="lnr lnr-phone-handset"></i> (91) 997 891 1838</a></li>
+							 <li><a href="mailto:rikenkhadelamain@gmail.com"><i class="lnr lnr-envelope"></i> rikenkhadelamain@gmail.com</a></li>
+							 <li><a href=""><i class="lnr lnr-home"></i> Surat, Gujrat, In. - 395010</a></li>
+						 </ul>
+						 <ul class="list personal_social">
+							 <li><a href="https://www.facebook.com/riken.khadela.3/"><i class="fa fa-facebook"></i></a></li>
+							 <li><a href="https://www.linkedin.com/in/riken-khadela-60b6341a6/"><i class="fa fa-linkedin"></i></a></li>
+						 </ul>
+					 </div>
+				 </div> -->
+				 <div class="">
+					 <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt3_2.png" alt="">
+				 </div>
+			 </div>
+			</div>
+	 </div>
+ </section>
+	 <section class="welcome_area p_70">
+		<div class="container">
+			<div class="row welcome_inner">
+					<div class="m-auto col-lg-7">
+						<h2 class="text-center">How we have solved that</h2>
+						<p class="text-center">To overcome these challenges, we made use of the Django's command feature to create custom commands that can be used to interact with the Telegram API. Additionally, we implemented a database of answers that the bot could use to respond to user input.</p>
+						<p class="text-center">Finally, we also had to create a feature that allows multiple users to hold a conversation between them, which appears as if there is a group discussion happening. We accomplished this by creating a conversation thread for each user and allowing them to communicate with each other through the bot.</p>
+						
+					</div>
+			</div>
+		</div>
+	</section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================Testimonials Area =================-->
+        <!-- <section class="testimonials_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Testimonials</h2>
+        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
+        		</div>
+        		<div class="testi_inner">
+					<div class="testi_slider owl-carousel">
+						<div class="item">
+							<div class="testi_item">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+								<h4>Fanny Spencer</h4>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star-half-o"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testi_item">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+								<h4>Fanny Spencer</h4>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star-half-o"></i></a>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testi_item">
+								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
+								<h4>Fanny Spencer</h4>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star"></i></a>
+								<a href="#"><i class="fa fa-star-half-o"></i></a>
+							</div>
+						</div>
+					</div>
+        		</div>
+        	</div>
+        </section> -->
+        <!--================End Testimonials Area =================-->
+        
+{% block portfolio %}{% include 'other/portfolio_grid.html' %}{% endblock portfolio %}
+ 
+{% endblock %}
