@@ -4,6 +4,9 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
+def error_404(requests,exception):
+    return render(requests,'404.html')
+
 class Home(TemplateView):
     template_name = "index.html"
     def get(self, request):
