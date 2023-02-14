@@ -1,0 +1,266 @@
+{% extends "base.html" %}
+
+{% block title %}LikeMeFast{% endblock %}
+
+{% block content %}
+
+<!--================Home Banner Area =================-->
+<section class="banner_area">
+    <div class="box_1620">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center">
+                    <h2>LikeMeFast</h2>
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="{% url 'about' %}">LikeMeFast</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================End Home Banner Area =================-->
+
+
+<!--================Home Banner Area =================-->
+<section class="profile_area">
+       <div class="container">
+           <div class="profile_inner p_rem">
+            <div class="row">
+                <div style="padding-bottom: 2rem; " class="m-auto"	>
+                    <h1 class="text-center">LikeMeFast : Social present </h1>
+                    <p class="text-center">Expand your reach, enhance your engagement with AddMeFast</p>
+                </div>
+
+                <!-- <div class="col-lg-7">
+                    <div class="personal_text">
+                        <h6>Hello Everybody, i am</h6>
+                        <h3>Riken Khadela</h3>
+                        <h4>Senior Python Developer</h4>
+                        <p>"Experienced Python Developer with a proven track record of delivering high-quality code and solutions."</p>
+                        <ul class="list basic_info">
+                            <li><a href=""><i class="lnr lnr-calendar-full"></i> 21st, Aug, 2001</a></li>
+                            <li><a href=""><i class="lnr lnr-phone-handset"></i> (91) 997 891 1838</a></li>
+                            <li><a href="mailto:rikenkhadelamain@gmail.com"><i class="lnr lnr-envelope"></i> rikenkhadelamain@gmail.com</a></li>
+                            <li><a href=""><i class="lnr lnr-home"></i> Surat, Gujrat, In. - 395010</a></li>
+                        </ul>
+                        <ul class="list personal_social">
+                            <li><a href="https://www.facebook.com/riken.khadela.3/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/riken-khadela-60b6341a6/"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="">
+                    <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt1_1.png" alt="">
+                </div>
+            </div>
+           </div>
+    </div>
+</section>
+<!--================End Home Banner Area =================-->
+<section class="welcome_area p-4">
+    <div class="container">
+        <div class="row welcome_inner col-lg-9 m-auto">
+                <div class="m-auto">
+                    <!-- <h2 class="text-center">What is about this project</h2> -->
+                    <p class="text-center">As the lead developer of AddMeFast, I'm proud to present this innovative platform that helps users increase their engagement and reach on various social media platforms. With a range of services including increasing likes, followers, views, and website hits, AddMeFast offers a convenient way for users to expand their social presence and reach a wider audience.</p>
+                    
+                </div>
+        </div>
+    </div>
+</section>
+
+<!--================Welcome Area =================-->
+<section class="welcome_area p_120">
+    <div class="container">
+        <div class="row welcome_inner">
+            <div class="col-lg-6">
+                <div class="welcome_text">
+                    <h4>What is about this project</h4>
+                    <p></p>
+                    <p class="text-center">Our platform is designed to be easy and user-friendly, making it accessible for anyone looking to boost their online presence. Whether you're a small business owner, influencer, or simply looking to increase your personal brand, AddMeFast provides you with the tools and features you need to grow your following on social media. With support for platforms like Facebook, Twitter, Instagram, YouTube, TikTok, and more, we offer a comprehensive solution for online growth.</p>
+                    <div class="row">
+                        <!-- <div class="col-md-4">
+                            <div class="wel_item">
+                                <i class="lnr lnr-database"></i>
+                                <h4>$2.5M</h4>
+                                <p>Total Donation</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wel_item">
+                                <i class="lnr lnr-book"></i>
+                                <h4>1465</h4>
+                                <p>Total Projects</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="wel_item">
+                                <i class="lnr lnr-users"></i>
+                                <h4>3965</h4>
+                                <p>Total Volunteers</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="">
+                    <div class="container text-center">
+                        <h2 class="m-2">Tech Stack</h2>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <ul class="list-group " style="border: none !important;">
+                                <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Python/Flask
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Database : MySQL
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    HTML/CSS/JS/Jquery
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Fast API
+                                  </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-6">
+                            <ul class="list-group border-0">
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                PayPal Integration
+                              </li>
+                            
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                AWS Server
+                              </li>
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                Git for update
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="profile_area">
+    <div class="container">
+        <div class="profile_inner p_rem">
+         <div class="row">
+             <div style="padding-bottom: 2rem; " class="m-auto"	>
+                 <h1 class="text-center">Attractive Design with High performance</h1>
+                 <p class="text-center">Elevate your online presence with our stunning design and high performance technology - AddMeFast</p>
+             </div>
+
+             <!-- <div class="col-lg-7">
+                 <div class="personal_text">
+                     <h6>Hello Everybody, i am</h6>
+                     <h3>Riken Khadela</h3>
+                     <h4>Senior Python Developer</h4>
+                     <p>"Experienced Python Developer with a proven track record of delivering high-quality code and solutions."</p>
+                     <ul class="list basic_info">
+                         <li><a href=""><i class="lnr lnr-calendar-full"></i> 21st, Aug, 2001</a></li>
+                         <li><a href=""><i class="lnr lnr-phone-handset"></i> (91) 997 891 1838</a></li>
+                         <li><a href="mailto:rikenkhadelamain@gmail.com"><i class="lnr lnr-envelope"></i> rikenkhadelamain@gmail.com</a></li>
+                         <li><a href=""><i class="lnr lnr-home"></i> Surat, Gujrat, In. - 395010</a></li>
+                     </ul>
+                     <ul class="list personal_social">
+                         <li><a href="https://www.facebook.com/riken.khadela.3/"><i class="fa fa-facebook"></i></a></li>
+                         <li><a href="https://www.linkedin.com/in/riken-khadela-60b6341a6/"><i class="fa fa-linkedin"></i></a></li>
+                     </ul>
+                 </div>
+             </div> -->
+             <div class="">
+                 <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt1_2.png" alt="">
+             </div>
+         </div>
+        </div>
+ </div>
+</section>
+
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7">
+                <h2 class="text-center">what challanges we got</h2>
+                <p class="">One of the biggest challenges we faced while developing AddMeFast was ensuring that our platform was able to keep up with the rapid pace of change in the social media landscape. With new platforms and features emerging all the time, we had to stay ahead of the curve to provide our users with the latest tools and features. Another challenge was ensuring the security and privacy of our users' data and transactions, given the sensitive nature of social media engagement.</p>
+                <!-- <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur neque necessitatibus quas rem ullam, perspiciatis ipsa, ea atque praesentium non nam libero maiores esse quaerat vitae corrupti nobis. Ut, fugiat!</p> -->
+            </div>
+    </div>
+</div>
+</section>
+<section class="profile_area">
+<div class="container">
+    <div class="profile_inner p_rem">
+     <div class="row">
+         <div style="padding-bottom: 2rem; " class="m-auto"	>
+             <h1 class="text-center">This is project heading</h1>
+             <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quia!</p>
+         </div>
+
+         <!-- <div class="col-lg-7">
+             <div class="personal_text">
+                 <h6>Hello Everybody, i am</h6>
+                 <h3>Riken Khadela</h3>
+                 <h4>Senior Python Developer</h4>
+                 <p>"Experienced Python Developer with a proven track record of delivering high-quality code and solutions."</p>
+                 <ul class="list basic_info">
+                     <li><a href=""><i class="lnr lnr-calendar-full"></i> 21st, Aug, 2001</a></li>
+                     <li><a href=""><i class="lnr lnr-phone-handset"></i> (91) 997 891 1838</a></li>
+                     <li><a href="mailto:rikenkhadelamain@gmail.com"><i class="lnr lnr-envelope"></i> rikenkhadelamain@gmail.com</a></li>
+                     <li><a href=""><i class="lnr lnr-home"></i> Surat, Gujrat, In. - 395010</a></li>
+                 </ul>
+                 <ul class="list personal_social">
+                     <li><a href="https://www.facebook.com/riken.khadela.3/"><i class="fa fa-facebook"></i></a></li>
+                     <li><a href="https://www.linkedin.com/in/riken-khadela-60b6341a6/"><i class="fa fa-linkedin"></i></a></li>
+                 </ul>
+             </div>
+         </div> -->
+         <div class="">
+             <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt1_3.png" alt="">
+         </div>
+     </div>
+    </div>
+</div>
+</section>
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7">
+                <h2 class="text-center">How we have solved that</h2>
+                <p class="">To tackle these challenges, we made sure that our platform was highly flexible and adaptable, allowing us to quickly incorporate new features and platforms as they emerged. We also implemented robust security and privacy measures to ensure that our users' data and transactions were protected at all times. These included secure payment systems, encrypted data storage, and strict user authentication and authorization processes.</p>
+             
+            </div>
+    </div>
+</div>
+</section>
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7">
+                <h2 class="text-center">Conclusion</h2>
+                <p class="text-center">In conclusion, AddMeFast is a powerful and user-friendly platform that provides users with the tools they need to expand their social media presence and reach a larger audience. With a wide range of services, flexible and adaptable architecture, and robust security and privacy measures, we're confident that AddMeFast will continue to be a valuable resource for anyone looking to grow their online presence.</p>
+   
+             
+            </div>
+    </div>
+</div>
+</section>
+
+{% block portfolio %}{% include 'other/portfolio_grid.html' %}{% endblock portfolio %}
+
+{% endblock %}
