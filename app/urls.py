@@ -2,7 +2,6 @@ from django.urls import path
 from django.conf.urls import include
 from .views import *
 
-
 urlpatterns = [
     path('',Home.as_view(),name='home'),
     path('about1',about_us.as_view(),name='about'),
@@ -23,4 +22,3 @@ urlpatterns = [
     # path('prt10',prt10.as_view(),name='prt10'),
     
 ]
-

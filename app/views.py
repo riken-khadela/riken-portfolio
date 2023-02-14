@@ -4,16 +4,6 @@ from django.shortcuts import render, redirect
 
 # Create your views here.
 
-from django.shortcuts import redirect
-from django.urls import reverse
-from django.core.exceptions import ViewDoesNotExist
-
-def redirect_to_home(request,ee):
-    try:
-        return redirect(reverse(''))
-    except ViewDoesNotExist:
-        return redirect('')
-
 class Home(TemplateView):
     template_name = "index.html"
     def get(self, request):
