@@ -42,7 +42,7 @@
                         <ul class="nav navbar-nav menu_nav ml-auto">
                             <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
-                            <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>
+                            <!-- <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li> -->
                             <li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a></li>
                             <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
                         </ul>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-9"> 
+                {% comment %} <div class="col-lg-9"> 
                     <form class="row contact_form" action="{% url 'contact' %}" method="post" id="contactForm"
                         novalidate="novalidate">
                         <div class="col-md-6">
@@ -127,13 +127,13 @@
                             <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
                         </div>
                     </form>
-                </div>
+                </div> {% endcomment %}
             </div>
         </div>
     </section>
     <!--================Contact Area =================-->
 
-    <!--================Footer Area =================-->
+    {% comment %} <!--================Footer Area =================-->
     <footer class="footer_area p_120">
         <div class="container">
             <div class="row footer_inner">
@@ -191,7 +191,7 @@
             </div>
         </div>
     </footer>
-    <!--================End Footer Area =================-->
+    <!--================End Footer Area =================--> {% endcomment %}
 
     <!--================Contact Success and Error message Area =================-->
     <div id="success" class="modal modal-message fade" role="dialog">

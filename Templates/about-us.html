@@ -38,7 +38,7 @@
 							<ul class="nav navbar-nav menu_nav ml-auto">
 								<li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li> 
 								<li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li> 
+								<!-- <li class="nav-item"><a class="nav-link" href="{% url 'services' %}">Services</a></li>  -->
 								<li class="nav-item"><a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a></li> 
 								<li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
 							</ul>
@@ -234,7 +234,7 @@
         <!--================End Testimonials Area =================-->
         
         <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
+        {% comment %} <footer class="footer_area p_120">
         	<div class="container">
         		<div class="row footer_inner">
         			<div class="col-lg-5 col-sm-6">
@@ -274,14 +274,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         					<ul class="list">
         						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
         						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
+        						<!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+        						<li><a href="#"><i class="fa fa-behance"></i></a></li> -->
         					</ul>
         				</aside>
         			</div>
         		</div>
         	</div>
-        </footer>
+        </footer> {% endcomment %}
         <!--================End Footer Area =================-->
         
         

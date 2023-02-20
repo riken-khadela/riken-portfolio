@@ -226,17 +226,17 @@
 	 </div>
  </div>
 </section>
-<!--================End My Tabs Area =================-->
+{% comment %} <!--================End My Tabs Area =================-->
 
-<!--================Feature Area =================-->
+<!--================Feature Area =================--> {% endcomment %}
 
-{% block service %}{% include 'other/service.html' %}{% endblock service %}
-<!--================End Feature Area =================-->
+{% comment %} {% block service %}{% include 'other/service.html' %}{% endblock service %} {% endcomment %}
+{% comment %} <!--================End Feature Area =================-->
 
-<!--================Home Gallery Area =================-->
+<!--================Home Gallery Area =================--> {% endcomment %}
 {% block portfolio %}{% include 'other/portfolio_grid.html' %}{% endblock portfolio %}
 
-<!--================End Home Gallery Area =================-->
+{% comment %} <!--================End Home Gallery Area =================-->
 
 <!--================Testimonials Area =================-->
 <section class="testimonials_area p_120">
@@ -285,7 +285,7 @@
  </div>
 </section>
 <!--================End Testimonials Area =================-->
-
+ {% endcomment %}
 
 
 {% endblock %}
