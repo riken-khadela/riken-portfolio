@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}portfolio{% endblock %}
+
+{% block content %}
+{% block content %}
+  <h1>{{ project.title }}</h1>
+  <p>{{ project.description }}</p>
+  <img src="{{ project.image.url }}" alt="{{ project.title }}">
+  {% if project.video_url %}
+    <iframe width="560" height="315" src="{{ project.video_url }}" frameborder="0" allowfullscreen></iframe>
+  {% endif %}
+  <p>Technologies used:</p>
+  {% if project.technologies %}
+    <ul>
+      {% for technology in project.technologies.split(',') %}
+        <li>{{ technology }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No technologies listed.</p>
+  {% endif %}
+
+  
+{% block portfolio %}{% include 'other/portfolio_grid.html' %}{% endblock portfolio %}
+
+
+
+
+{% endblock %}

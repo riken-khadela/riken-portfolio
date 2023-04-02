@@ -1,8 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView, CreateView
-from django.shortcuts import render, redirect
-
+from .models import project
 # Create your views here.
+
+def project_detail(request, pk):
+    project = get_object_or_404(project, pk=pk)
+    context = {'project': project}
+    return render(request, 'project_detail.html', context)
+
 
 def error_404(requests,exception):
     return render(requests,'404.html')

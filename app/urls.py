@@ -3,6 +3,7 @@ from django.conf.urls import include
 from .views import *
 
 urlpatterns = [
+    path('project/<slug:slug>/', project_detail, name='project_detail'),
     path('',Home.as_view(),name='home'),
     path('about',about_us.as_view(),name='about'),
     path('blog',blog.as_view(),name='blog'),
