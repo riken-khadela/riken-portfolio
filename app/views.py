@@ -3,11 +3,21 @@ from django.views.generic import TemplateView, CreateView
 from .models import project
 # Create your views here.
 
-def project_detail(request, pk):
-    project = get_object_or_404(project, pk=pk)
-    context = {'project': project}
-    return render(request, 'project_detail.html', context)
+def project_detail(request, slug):
+    context = {}
+    if project.objects.filter(slug=slug).exists():
+        prj = project.objects.get(slug=slug).__dict__
+        context['project'] = prj
+    else:
+        context['project'] = {}
+        
+    return render(request, 'overall_prj.html', context)
 
+class project_list(TemplateView):
+    template_name = "prj_list.html"
+    def get(self, request):
+
+        return render(request, self.template_name)
 
 def error_404(requests,exception):
     return render(requests,'404.html')
