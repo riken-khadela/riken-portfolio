@@ -10,7 +10,6 @@ def project_detail(request, slug):
         context['project'] = prj
     else:
         context['project'] = {}
-        
     return render(request, 'overall_prj.html', context)
 
 class project_list(TemplateView):
