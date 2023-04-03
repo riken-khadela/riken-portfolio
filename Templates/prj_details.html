@@ -1,7 +1,5 @@
-
-
 {% extends "base.html" %}
-
+{% load static %}
 {% block title %}portfolio{% endblock %}
 
 {% block content %}
@@ -10,10 +8,10 @@
         <div class="banner_inner d-flex align-items-center">
             <div class="container">
                 <div class="banner_content text-center">
-                    <h2>Portfolio</h2>
+                    <h2>All Projects</h2>
                     <div class="page_link">
                         <a href="{% url 'home' %}">Home</a>
-                        <a href="{% url 'portfolio' %}">Portfolio</a>
+                        <a href="{% url 'ProjectList' %}">{{ project.MainTitle }}</a>
                     </div>
                 </div>
             </div>
@@ -21,9 +19,6 @@
     </div>
 </section>
 
-{% block portfolio %}{% include 'other/portfolio_grid.html' %}{% endblock portfolio %}
-
-
-
+<h1>{{ project.MainTitle }}</h1>
 
 {% endblock %}

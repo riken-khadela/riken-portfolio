@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView, CreateView
-from .models import project
+from app.models import project
 # Create your views here.
 
 def project_detail(request, slug):
@@ -10,13 +10,23 @@ def project_detail(request, slug):
         context['project'] = prj
     else:
         context['project'] = {}
-    return render(request, 'overall_prj.html', context)
+    return render(request, 'prj_details.html', context)
 
 class project_list(TemplateView):
     template_name = "prj_list.html"
     def get(self, request):
-
-        return render(request, self.template_name)
+        projects = []
+        for prj in project.objects.all().order_by('?'):
+            a = {}
+            a['title'] = prj.MainTitle
+            a['SmallDiscription'] = prj.SmallDiscription
+            a['slug'] = prj.slug
+            projects.append(a)
+        context = {
+        "data" : projects,
+        }
+        
+        return render(request, self.template_name,context)
 
 def error_404(requests,exception):
     return render(requests,'404.html')
