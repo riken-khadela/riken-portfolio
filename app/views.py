@@ -10,6 +10,16 @@ def project_detail(request, slug):
         context['project'] = prj
     else:
         context['project'] = {}
+    
+    if context['project']['img2'] :
+        url1 = context['project']['img2']
+        url1 = url1.replace('file/d/','uc?export=view&id=').split('/view')[0]
+        context['project']['img2'] = url1
+    if context['project']['img3'] :
+        url2 = context['project']['img3']
+        url2 = url2.replace('file/d/','uc?export=view&id=').split('/view')[0]
+        context['project']['img3'] = url2
+        
     return render(request, 'prj_details.html', context)
 
 class project_list(TemplateView):
