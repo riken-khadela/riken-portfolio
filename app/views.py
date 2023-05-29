@@ -20,13 +20,29 @@ def project_detail(request, slug):
         url2 = url2.replace('file/d/','uc?export=view&id=').split('/view')[0]
         context['project']['img3'] = url2
         
+    if 'technologies' in prj :
+        if  prj['technologies'] :
+            context['project']['technologieslist'] = prj['technologies'].split(',')
+            
+    if len(project.objects.all()) >=  6:
+        
+        MoreProjects = []
+        for prj in project.objects.order_by('?')[:6]:
+            a = {}
+            a['title'] = prj.MainTitle
+            a['SmallDiscription'] = prj.SmallDiscription
+            a['slug'] = prj.slug
+            MoreProjects.append(a)
+        
+        context['project']['more_projects'] = MoreProjects
+        print(context['project']['more_projects'],'------------------------')
     return render(request, 'prj_details.html', context)
 
 class project_list(TemplateView):
     template_name = "prj_list.html"
     def get(self, request):
         projects = []
-        for prj in project.objects.all().order_by('?'):
+        for prj in project.objects.all():
             a = {}
             a['title'] = prj.MainTitle
             a['SmallDiscription'] = prj.SmallDiscription
