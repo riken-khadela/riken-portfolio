@@ -2,6 +2,7 @@
 
 
 <html>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -22,47 +23,43 @@
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
 </head>
+
 <body>
-  <main>
+    <main>
 
-<style>
-  .profolio_imagess{
-    
-      width: 360px; /* You can set the dimensions to whatever you want */
-      height: 200px;
-      object-fit: cover;
-  }
-</style>
+        <style>
+            .profolio_imagess {
+                width: 360px;
+                /* You can set the dimensions to whatever you want */
+                height: 200px;
+                object-fit: cover;
+            }
+        </style>
 
-    {% block navbar %}{% include 'other/navbar.html' %}{% endblock navbar %}
-    
-    
-    {% block content %}
-    {% endblock %}
-    
-    
-    {% block footer %}{% include 'other/footer.html' %}{% endblock footer %}
+        {% block navbar %}{% include 'other/navbar.html' %}{% endblock navbar %} {% block content %} {% endblock %} {% block footer %}{% include 'other/footer.html' %}{% endblock footer %}
 
-  </main>
+    </main>
 
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-        <script src="{% static 'js/popper.js' %}"></script>
-        <script src="{% static 'js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/stellar.js' %}"></script>
-        <script src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
-        <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
-        <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
-        <script src="{% static 'vendors/isotope/isotope.pkgd.min.js' %}"></script>
-        <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
-        <script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
-        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
-        <script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
-        <script src="{% static 'vendors/counter-up/jquery.counterup.min.js' %}"></script>
-        <script src="{% static 'js/mail-script.js' %}"></script>
-        <script src="{% static 'js/theme.js' %}"></script>
-    </body>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/stellar.js' %}"></script>
+    <script src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
+    <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendors/isotope/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'vendors/popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'vendors/counter-up/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'vendors/counter-up/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
+    <script src="{% static 'js/theme.js' %}"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4813866972494060" crossorigin="anonymous"></script>
+</body>
+
 </html>
