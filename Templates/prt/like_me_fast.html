@@ -1,0 +1,179 @@
+{% extends "base.html" %}
+
+{% block title %}LikeMeFast - My Project{% endblock %} {# More descriptive title #}
+
+{% block content %}
+
+{# Renamed banner_area to page_header_area for clarity on project pages #}
+<section class="banner_area">
+    <div class="box_1620">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center" data-aos="fade-up" data-aos-duration="1000"> {# Added AOS #}
+                    <h2>LikeMeFast: Advanced Social Engagement Platform</h2>
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="#">LikeMeFast Project</a> {# Changed to a direct project link, assuming no 'about' for this specific page #}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="profile_area">
+       <div class="container">
+           <div class="profile_inner p_rem">
+            <div class="row">
+                <div style="padding-bottom: 2rem;" class="m-auto" data-aos="fade-up" data-aos-delay="200"> {# Added AOS #}
+                    <h1 class="text-center">LikeMeFast: Maximizing Social Presence</h1>
+                    <p class="text-center">Engineered to expand reach and enhance engagement, LikeMeFast empowers users to significantly grow their online presence.</p>
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="400"> {# Added AOS #}
+                    <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt1_1.png" alt="LikeMeFast Social Presence Screenshot">
+                </div>
+            </div>
+           </div>
+    </div>
+</section>
+<section class="welcome_area p-4">
+    <div class="container">
+        <div class="row welcome_inner col-lg-9 m-auto" data-aos="fade-up" data-aos-delay="200"> {# Added AOS #}
+                <div class="m-auto">
+                    <h2 class="text-center">The Solution: Seamless Social Engagement</h2>
+                    <p class="text-center">As the lead developer of LikeMeFast, I spearheaded the creation of this innovative platform to help individuals and businesses dramatically increase their social media engagement and reach. LikeMeFast offers a comprehensive suite of services, including increasing likes, followers, views, and website hits across diverse platforms, providing a streamlined and efficient pathway to expanding online influence.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="welcome_area p_120">
+    <div class="container">
+        <div class="row welcome_inner">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300"> {# Added AOS #}
+                <div class="welcome_text">
+                    <h4>Empowering Online Growth</h4>
+                    <p>My strategic vision for LikeMeFast was to design an intuitive and highly accessible platform for anyone aiming to amplify their online presence. Whether for small business owners, emerging influencers, or personal brands, LikeMeFast delivers the essential tools and features for robust social media growth. With extensive support for leading platforms such as Facebook, Twitter, Instagram, YouTube, TikTok, and more, I ensured a comprehensive and scalable solution for diverse online growth needs.</p>
+                    <div class="row">
+                        {# Removed commented out stats, as they are not relevant to this project's details #}
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300"> {# Added AOS #}
+                <div class="">
+                    <div class="container text-center">
+                        <h2 class="m-2">Core Technologies & Architecture</h2>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <ul class="list-group " style="border: none !important;">
+                                
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Python (Programming language) 
+                                  </li>
+                                
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Flask   (Web-development Framework)
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Database: MySQL (Robust & Scalable)
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    HTML/CSS/JS/jQuery (Dynamic Frontend)
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    FastAPI (High-Performance APIs)
+                                  </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-6">
+                            <ul class="list-group border-0">
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                PayPal Integration (Secure Payments)
+                              </li>
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                AWS Deployment (Scalable Cloud Infrastructure)
+                              </li>
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                Git (Version Control & Collaboration)
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="profile_area">
+    <div class="container">
+        <div class="profile_inner p_rem">
+         <div class="row">
+             <div style="padding-bottom: 2rem;" class="m-auto" data-aos="fade-up" data-aos-delay="200"> {# Added AOS #}
+                 <h1 class="text-center">Intuitive Design & High-Performance Engineering</h1>
+                 <p class="text-center">My expertise ensures LikeMeFast delivers a visually stunning user experience paired with robust, high-performance technology. Elevate your online presence with a platform built for excellence.</p>
+             </div>
+             <div class="" data-aos="zoom-in" data-aos-delay="400"> {# Added AOS #}
+                 <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt1_2.png" alt="LikeMeFast Design Screenshot">
+             </div>
+         </div>
+        </div>
+ </div>
+</section>
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7" data-aos="fade-up" data-aos-delay="200"> {# Added AOS #}
+                <h2 class="text-center">Challenges & Strategic Solutions</h2>
+                <p class="">A primary challenge in developing LikeMeFast was adapting to the dynamic social media landscape, where new platforms and features constantly emerge. My commitment to staying ahead of the curve ensured that our platform consistently offered cutting-edge tools. Furthermore, safeguarding user data and transaction security was paramount given the sensitive nature of social media engagement. I implemented robust measures to address these critical aspects.</p>
+            </div>
+    </div>
+</div>
+</section>
+
+<section class="profile_area">
+<div class="container">
+    <div class="profile_inner p_rem">
+     <div class="row">
+         <div style="padding-bottom: 2rem;" class="m-auto" data-aos="fade-up" data-aos-delay="200"> {# Added AOS #}
+             <h1 class="text-center">My Approach: Adaptability & Security by Design</h1>
+             <p class="text-center">My philosophy for LikeMeFast centered on building a platform that is inherently flexible and secure, ensuring long-term value for users.</p>
+         </div>
+         <div class="" data-aos="zoom-in" data-aos-delay="400"> {# Added AOS #}
+             <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="static/img/prt/prt1_3.png" alt="LikeMeFast Solution Screenshot">
+         </div>
+     </div>
+    </div>
+</div>
+</section>
+
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7" data-aos="fade-up" data-aos-delay="200"> {# Added AOS #}
+                <h2 class="text-center">Implementation & Innovation</h2>
+                <p class="">To overcome development hurdles, I engineered LikeMeFast with a highly flexible and adaptable architecture. This foresight allowed for rapid integration of new features and emerging social platforms. Critically, I implemented stringent security and privacy measures, including secure payment gateways, encrypted data storage, and robust user authentication processes, ensuring the continuous protection of all user data and transactions. This commitment to security and adaptability is a testament to my dedication to building resilient and trustworthy solutions.</p>
+            </div>
+    </div>
+</div>
+</section>
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7" data-aos="fade-up" data-aos-delay="200"> {# Added AOS #}
+                <h2 class="text-center">Conclusion: My Expertise in Action</h2>
+                <p class="text-center">LikeMeFast stands as a robust, user-friendly platform that empowers users to significantly expand their social media presence. Through its wide range of services, flexible and adaptable architecture, and stringent security measures—all developed under my leadership and technical expertise—LikeMeFast remains a valuable resource for anyone committed to online growth. This project effectively showcases my capabilities in delivering complex, high-quality web solutions.</p>
+            </div>
+    </div>
+</div>
+</section>
+{% block portfolio %}{% include 'other/portfolio_grid.html' %}{% endblock portfolio %}
+
+{% endblock %}

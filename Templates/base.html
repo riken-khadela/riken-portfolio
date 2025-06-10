@@ -22,9 +22,15 @@
     <!-- main css -->
     <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/responsive.css">
+    <!-- <link rel="stylesheet" href="{% static '/css/custom-cursor.css' %}"> -->
 </head>
 
 <body>
+    <style></style>
     <main>
 
         <style>
@@ -59,7 +65,21 @@
     <script src="{% static 'vendors/counter-up/jquery.counterup.min.js' %}"></script>
     <script src="{% static 'js/mail-script.js' %}"></script>
     <script src="{% static 'js/theme.js' %}"></script>
+    <!-- <script src="{% static 'js/custom-cursor.js' %}"></script> -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4813866972494060" crossorigin="anonymous"></script>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="static/js/theme.js"></script>
+    <script src="static/js/mail-script.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
 </body>
 
 </html>

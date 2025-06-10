@@ -2,3 +2,5 @@ env
 app
 text
 app/__pycache__
+staticfiles
+djangoherokuapp/__pycache__

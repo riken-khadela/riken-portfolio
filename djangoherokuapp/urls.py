@@ -15,9 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.conf import settings # Add this line
+import os
+from django.conf.urls.static import static # Add this line
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("app.urls")),
 
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    # ^ Note: You might need to change STATIC_ROOT here to the path in STATICFILES_DIRS if STATIC_ROOT is for collected files only
+    # A common alternative for development is:
+    urlpatterns += static(settings.STATIC_URL, document_root=os.path.join(settings.BASE_DIR, 'static'))

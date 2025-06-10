@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}Hallour - My Project{% endblock %}
+{% load static %}
+{% block content %}
+
+<section class="banner_area">
+    <div class="box_1620">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="container">
+                <div class="banner_content text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <h2>Hallour: Dynamic Q&A Platform for Knowledge Exchange</h2>
+                    <div class="page_link">
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="#">Hallour Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="profile_area">
+       <div class="container">
+           <div class="profile_inner p_rem">
+            <div class="row">
+                <div style="padding-bottom: 2rem;" class="m-auto" data-aos="fade-up" data-aos-delay="200">
+                    <h1 class="text-center">Hallour: Building Engaging Knowledge Communities</h1>
+                    <p class="text-center">As a core developer, I built Hallour, a question-and-answer platform akin to Stack Overflow, designed to foster vibrant online communities.</p>
+                </div>
+                <div class="" data-aos="zoom-in" data-aos-delay="400">
+                    <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="{% static '/img/portfolio/hallour.png' %}" alt="Hallour Q&A Platform Screenshot">
+                </div>
+            </div>
+           </div>
+    </div>
+</section>
+<section class="welcome_area p-4">
+    <div class="container">
+        <div class="row welcome_inner col-lg-9 m-auto" data-aos="fade-up" data-aos-delay="200">
+                <div class="m-auto">
+                    <h2 class="text-center">The Solution: Scalable Interaction & Data Management</h2>
+                    <p class="text-center">I developed Hallour to provide a robust and intuitive platform for users to share knowledge and engage in discussions. It features comprehensive user authentication, enabling seamless question posting, voting, and commenting. My focus was on implementing highly scalable backend logic with Django, ensuring efficient data handling even as the community grows.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="welcome_area p_70">
+    <div class="container">
+        <div class="row welcome_inner">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="300">
+                <div class="welcome_text">
+                    <h4>Enhancing User Experience & Engagement</h4>
+                    <p>My work on Hallour involved integrating sophisticated commenting systems and optimizing backend logic for scalability. This significantly improved user experience and fostered higher engagement, while simultaneously ensuring efficient data management to support a dynamic Q&A environment. The platform is built to facilitate knowledge exchange, providing a seamless and responsive interaction for all users.</p>
+                </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+                <div class="">
+                    <div class="container text-center">
+                        <h2 class="m-2">Core Technologies & Architecture</h2>
+                        <br>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <ul class="list-group " style="border: none !important;">
+                                <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    Python/Django (Robust Backend)
+                                  </li>
+                                  <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                    <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                    HTML/CSS/JS/jQuery (Interactive Frontend)
+                                  </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-6">
+                            <ul class="list-group border-0">
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                RESTful API (Efficient Communication)
+                              </li>
+                              <li class="list-group-item d-flex border-0 align-items-center text-center ">
+                                <span class="fa fa-circle mx-2" style="font-size: 8px;"></span>
+                                (Database Integration - e.g., PostgreSQL/SQLite) {# Mention potential database #}
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-center">Challenges & Strategic Solutions</h2>
+                <p class="text-center">Building a Q&A platform that could handle a growing volume of user interactions and ensure efficient data management presented specific challenges. My primary focus was on engineering a backend capable of supporting high concurrency while maintaining performance, and designing intuitive interfaces that encourage active user participation and content contribution.</p>
+            </div>
+    </div>
+</div>
+</section>
+
+<section class="profile_area">
+<div class="container">
+    <div class="profile_inner p_rem">
+     <div class="row">
+         <div class="" data-aos="zoom-in" data-aos-delay="400">
+             {# Placeholder Image: Community interaction, forum layout, or knowledge sharing #}
+             <img class="img-fluid rounded-1" style="border-radius: 1.3rem;" src="{% static '/img/portfolio/hallour1.png' %}" alt="Hallour Community Screenshot">
+         </div>
+     </div>
+    </div>
+</div>
+</section>
+
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-center">Architecting for Performance & Engagement</h2>
+                <p class="text-center">To address these challenges, I implemented a robust Django backend framework, optimizing database queries and data structures for rapid content retrieval and submission. Scalable backend logic was designed to manage high volumes of concurrent users and interactions without performance degradation. Furthermore, I prioritized a user-centric design, streamlining the posting, voting, and commenting processes to enhance overall user experience and foster a highly engaged knowledge-sharing community.</p>
+            </div>
+    </div>
+</div>
+</section>
+<section class="welcome_area p_70">
+<div class="container">
+    <div class="row welcome_inner">
+            <div class="m-auto col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-center">Conclusion: My Expertise in Building Engaging Platforms</h2>
+                <p class="text-center">Hallour exemplifies my proficiency in developing scalable and user-centric web applications. By mastering complex backend logic and prioritizing efficient data management, I delivered a platform that not only facilitates seamless knowledge exchange but also significantly enhances user engagement. This project showcases my capability to build dynamic and robust online communities that thrive on interaction and valuable content sharing.</p>
+            </div>
+    </div>
+</div>
+</section>
+{% block portfolio %}{% include 'other/portfolio_grid.html' %}{% endblock portfolio %}
+
+{% endblock %}

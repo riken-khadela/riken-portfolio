@@ -54,8 +54,12 @@ class project_list(TemplateView):
         
         return render(request, self.template_name,context)
 
-def error_404(requests,exception):
-    return render(requests,'404.html')
+def custom_404_view(request, exception):
+    """
+    Custom 404 error handler for Django.
+    Renders the 404.html template.
+    """
+    return render(request, 'Templates/404.html', status=404)
 
 class Home(TemplateView):
     template_name = "index.html"
@@ -108,47 +112,57 @@ class single_blog(TemplateView):
         return render(request, self.template_name)
     
 # --------------------------------------------------------------1
-class prt1(TemplateView):
-    template_name = "prt/1.html"
+class like_me_fast(TemplateView):
+    template_name = "prt/like_me_fast.html"
     def get(self, request):
         return render(request, self.template_name)
 
 # --------------------------------------------------------------2
-class prt2(TemplateView):
-    template_name = "prt/2.html"
+class CoinHomes(TemplateView):
+    template_name = "prt/CoinHomes.html"
     def get(self, request):
         return render(request, self.template_name)    
 
     
 # --------------------------------------------------------------3
-class prt3(TemplateView):
-    template_name = "prt/3.html"
+class Pharsight(TemplateView):
+    template_name = "prt/Pharsight.html"
     def get(self, request):
 
         return render(request, self.template_name) 
        
 # --------------------------------------------------------------4
-class prt4(TemplateView):
-    template_name = "prt/4.html"
+class ShreeTextTile(TemplateView):
+    template_name = "prt/ShreeTextTile.html"
     def get(self, request):
 
         return render(request, self.template_name)    
         
 # --------------------------------------------------------------5
-class prt5(TemplateView):
-    template_name = "prt/5.html"
+class Instagram(TemplateView):
+    template_name = "prt/Instagram.html"
     def get(self, request):
         return render(request, self.template_name)    
 
 # --------------------------------------------------------------6
-class prt6(TemplateView):
-    template_name = "prt/6.html"
+class dyzner(TemplateView):
+    template_name = "prt/dyzner.html"
     def get(self, request):
         return render(request, self.template_name)    
 
 # --------------------------------------------------------------7
-class prt7(TemplateView):
-    template_name = "prt/7.html"
+class Hallour(TemplateView):
+    template_name = "prt/Hallour.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+# --------------------------------------------------------------7
+class domainmarket(TemplateView):
+    template_name = "prt/domain_market.html"
+    def get(self, request):
+        return render(request, self.template_name)    
+# --------------------------------------------------------------7
+class YouTube(TemplateView):
+    template_name = "prt/youtube.html"
     def get(self, request):
         return render(request, self.template_name)    
 
