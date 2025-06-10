@@ -4,3 +4,25 @@ text
 app/__pycache__
 staticfiles
 djangoherokuapp/__pycache__
+
+# Byte-compiled / optimized / compressed files
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+.Python
+env/  # Or whatever you named your virtual environment directory
+venv/ # Common name for virtual environment
+db.sqlite3 # Your local database file
+/static/ # If you are collecting static files here for production, but usually not in source control
+/staticfiles/ # Where `collectstatic` puts files
+
+# IDE specific files
+.idea/ # PyCharm
+.vscode/ # VS Code
+
+# Environment variables
+.env
+
+# Other
+media/ # User-uploaded media files
